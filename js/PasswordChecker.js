@@ -14,7 +14,7 @@ export function checkPassword(password) {
     if (!password.match(/[0-9]/)) {
         throw new Error('Password must contain at least one number');
     }
-    if (!password.match(/[^a-zA-Z0-9]/)) {
+    if (!password.match(/[^a-zA-Z0-9!]/)) {
         throw new Error('Password must contain at least one special character');
     }
 }
