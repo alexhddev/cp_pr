@@ -1,5 +1,9 @@
+package com.mycompany;
+
 public class PasswordChecker {
-    public boolean isValidPassword(String password) {
+
+
+    public boolean checkPassword(String password) {
         if (password.length() < 8) {
             return false;
         }
@@ -15,9 +19,11 @@ public class PasswordChecker {
         if (!password.matches(".*[0-9].*")) {
             return false;
         }
-        if (!password.matches(".*[!@#$%^&*].*")) {
+        if (!password.matches(".*[!@#$%^&*()_+=-].*")) {
             return false;
         }
+        
         return true;
     }
+    
 }
