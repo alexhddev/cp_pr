@@ -1,4 +1,4 @@
-import { checkPassword, checkPasswordWithoutReqEx } from './PasswordChecker.js';
+import { checkPassword, checkPasswordWithoutReqEx } from '../src/PasswordChecker.js';
 import crypto from 'crypto';
 
 describe.skip('checkPassword', () => {
